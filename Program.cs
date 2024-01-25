@@ -9,7 +9,7 @@
             Console.Write("Para começar, digite por favor a quantidade desejada de quantos funcionários deseja cadastrar: ");
             int qtdFuncionarios = int.Parse(Console.ReadLine());
 
-            Cadastro cadastro = new Cadastro();
+            Cadastro cadastro = new();
 
             for (int i = 1; i <= qtdFuncionarios; i++)
             {
