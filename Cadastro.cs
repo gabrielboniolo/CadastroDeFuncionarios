@@ -27,6 +27,9 @@ namespace CadastroFuncionarios
 
         public void ExibirFuncionarios()
         {
+            Console.Clear();
+
+            Console.WriteLine("Aqui está a lista de funcionários:\n");
             int i = 1;
             foreach(var funcionario in Funcionarios)
             {
