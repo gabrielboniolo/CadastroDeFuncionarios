@@ -1,4 +1,5 @@
 ﻿obj/
 bin/
+.vs/CadastroFuncionarios/
 CadastroFuncionarios.csproj
 CadastroFuncionarios.sln
