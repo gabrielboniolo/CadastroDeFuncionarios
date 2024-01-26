@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -25,17 +26,9 @@ namespace CadastroFuncionarios
             Funcionarios.Remove(funcionario);
         }
 
-        public void ExibirFuncionarios()
+        public IEnumerator<Funcionario> GetEnumerator()
         {
-            Console.Clear();
-
-            Console.WriteLine("Aqui está a lista de funcionários:\n");
-            int i = 1;
-            foreach(var funcionario in Funcionarios)
-            {
-                Console.WriteLine($"{i}) {funcionario}");
-                i++;
-            }
+            return Funcionarios.GetEnumerator();
         }
     }
 }
