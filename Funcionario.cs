@@ -23,7 +23,7 @@ namespace CadastroFuncionarios
 
         public override string ToString()
         {
-            return $"Id: {Id}, nome: {Nome}, cargo: {Cargo}, salário: {Salario}.";
+            return $"Id: {Id}, nome: {Nome}, cargo: {Cargo}, salário: {Salario:F2}.";
         }
     }
 }
